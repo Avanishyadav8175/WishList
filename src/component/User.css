@@ -1,0 +1,35 @@
+.user{
+    width: 90%;
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 2%;
+    height: 10vh;
+    align-items: center;
+    font-size: 30px;
+ }
+
+ #wish{
+  width: 20%;
+  /* align-items: center; */
+  height: 4.2vh;
+  font-size: 30px;
+ }
+ 
+ .btn{
+    height: 5.3vh;
+    padding-top: 8px;
+    margin-left: 2px;
+    border-radius: 10px;
+    padding-bottom: -10px;
+    align-items: center;
+    font-size: 20px;
+ }
+ .btn1{
+   height: 5.3vh;
+   padding-top: 8px;
+   margin-left: 2px;
+   border-radius: 10px;
+   padding-bottom: -10px;
+   align-items: center;
+   font-size: 20px;
+}

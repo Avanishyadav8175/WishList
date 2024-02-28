@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import React,{useState} from 'react';
 import './App.css';
+import Userinput from './component/Userinput.jsx';
+import Data from './component/Data.jsx';
 
 function App() {
+  const [wishlist,setWishlist] = useState([]);
+  
+  function addToWishlist(newWish){
+    setWishlist([...wishlist,newWish]);
+  }
+  function clearWishlist() {
+    setWishlist([]);
+  }
+  
+  function deleteWish(index) {
+    const newWishlist = [...wishlist];
+    newWishlist.splice(index, 1);
+    setWishlist(newWishlist);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wishlist">
+          <Userinput addToWishlist={addToWishlist} clearWishlist={clearWishlist}/>  
+          <Data wishlist={wishlist} deleteWish={deleteWish}/>
     </div>
   );
 }

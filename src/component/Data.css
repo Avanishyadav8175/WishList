@@ -1,0 +1,18 @@
+.data{
+    position: absolute;
+    margin-top: 8%;
+    font-size: 25px;
+    margin-left: 3%;
+   
+}
+ul{
+    /* display: flex; */
+    margin-left: 10px;
+}
+.bttn{
+    height: 20px;
+    background-color: rgb(222, 122, 122);
+    color: aliceblue;
+    border: 0px;
+    border-radius: 4px;
+}
